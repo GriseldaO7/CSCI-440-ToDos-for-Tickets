@@ -6,17 +6,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>To-Dos for Tickets</title>
+    <title>Features · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 
-<!--    <link rel="canonical" href = "https://getbootstrap.com/docs/5.2/examples/features/">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-
-
-    
-
-<!--<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<!--link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"-->
 
     <style>
       .bd-placeholder-img {
@@ -71,15 +67,16 @@
       }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', path = '../static/css/features.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', path ='/css/features.css')}}" rel="stylesheet">
   </head>
-  <body>
-    
+
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/Plane23.jpg');">
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
-    <title>Parents Portal</title>
+    <title>Bootstrap</title>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
   </symbol>
   <symbol id="home" viewBox="0 0 16 16">
@@ -89,9 +86,8 @@
     <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
     <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
   </symbol>
-  <symbol id="people-circle" viewBox="0 0 16 16">
-    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  <symbol id="table" viewBox="0 0 16 16">
+    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
   </symbol>
   <symbol id="people-circle" viewBox="0 0 16 16">
     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -137,18 +133,21 @@
   </symbol>
 </svg>
 <main>
-  <h1 class="visually-hidden">Features examples</h1>
+
+  <h1 class="visually-hidden">For Every Family Member</h1>
 
   <div class="container px-4 py-5" id="featured-3">
     <h2 class="pb-2 border-bottom">For Every Family Member</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
-        </div>
+       </div>
+
         <h3 class="fs-2">Children Login</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
+        <p>Show all the books in the book store.</p>
+        <a href="/books" class="icon-link d-inline-flex align-items-center">
           Login
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
         </a>
@@ -164,19 +163,16 @@
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
         </a>
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+
+     <div class="card card-cover h-900 overflow-hidden text-bg-dark rounded-5 shadow-lg" style="background-image: url('/static/images/Plane20.jpg');">
+
+
         </div>
-        <h3 class="fs-2">Ideas</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link d-inline-flex align-items-center">
-          Call to action
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-        </a>
       </div>
     </div>
   </div>
+
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/Plane18.jpg');">
 
   <div class="b-example-divider"></div>
 
@@ -229,7 +225,7 @@
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../static/images/unsplash-photo-1.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/Plane11.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -250,7 +246,7 @@
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../static/images/unsplash-photo-2.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/Plane6.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -271,7 +267,7 @@
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../static/images/'unsplash-photo-3.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/images/Plane3.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -357,71 +353,16 @@
       </div>
     </div>
   </div>
-
-  <div class="b-example-divider"></div>
-
-  <div class="container px-4 py-5">
-    <h2 class="pb-2 border-bottom">Features with title</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-      <div class="col d-flex flex-column align-items-start gap-2">
-        <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-      </div>
-
-      <div class="col">
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col d-flex flex-column gap-2">
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#gear-fill" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#speedometer" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#table" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </main>
 
 
-<!--    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-      
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+</div>
+   </body>
 </html>
+
